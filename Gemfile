@@ -42,6 +42,11 @@ gem 'sqlite3'
   gem 'selenium-webdriver'
 end
 
+group :production do
+  gem 'pg', '~> 0.20'
+  #gem 'rails_12factor' #not needed if you are using Rails 5, like we are.
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
